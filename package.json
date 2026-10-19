@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "ICT251 Activity 4 - Question 2: Personal Recipe Card CRUD System",
   "main": "backend/server.js",
+  "license": "MIT",
+  "private": true,
   "scripts": {
     "start": "node backend/server.js",
     "build": "cd backend && npm install",
