@@ -1,0 +1,7 @@
+$kind: http-request
+description: Retrieves the list of all personal recipe cards from the database.
+url: "{{baseUrl}}/api/recipes"
+method: GET
+headers:
+  Accept: application/json
+order: 1000

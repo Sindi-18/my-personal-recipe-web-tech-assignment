@@ -1,0 +1,22 @@
+$kind: http-request
+description: Creates a new recipe card entry in the database. Returns HTTP 201 Created.
+url: "{{baseUrl}}/api/recipes"
+method: POST
+headers:
+  Content-Type: application/json
+  Accept: application/json
+body:
+  type: json
+  content: |-
+    {
+      "title": "Traditional Ifisashi with Groundnuts & Pumpkin Leaves",
+      "cuisine": "Zambian",
+      "category": "Main Course",
+      "prep_time_minutes": 20,
+      "cook_time_minutes": 35,
+      "servings": 4,
+      "ingredients": "2 bunches fresh pumpkin leaves (chibwabwa), 1 cup raw pounded groundnuts (peanut powder), 2 medium tomatoes chopped, 1 medium onion sliced, 2 cups water, salt to taste",
+      "instructions": "1. Wash and shred pumpkin leaves finely.\n2. In a cooking pot, combine chopped tomatoes, onions, water, and shredded pumpkin leaves; simmer for 15 minutes.\n3. Whisk peanut powder with a little cold water to make a smooth paste, then stir into the simmering vegetables.\n4. Simmer gently on low heat for 20 minutes, stirring occasionally to prevent sticking, until thick and fragrant.\n5. Serve hot with staple nshima.",
+      "difficulty": "Medium"
+    }
+order: 3000

@@ -1,0 +1,4 @@
+$kind: collection
+description: "Postman Collection for Mulungushi University ICT251 Activity 4 - Question 2: Personal Recipe Card CRUD REST API endpoints (GET, POST, PUT, DELETE)."
+variables:
+  baseUrl: http://localhost:3000

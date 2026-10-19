@@ -1,0 +1,7 @@
+$kind: http-request
+description: Deletes a recipe record by its ID. Returns HTTP 200 OK with confirmation message.
+url: "{{baseUrl}}/api/recipes/10"
+method: DELETE
+headers:
+  Accept: application/json
+order: 5000

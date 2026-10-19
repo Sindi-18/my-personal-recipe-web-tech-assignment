@@ -1,0 +1,7 @@
+$kind: http-request
+description: Retrieves full details for a single recipe record by its primary key ID.
+url: "{{baseUrl}}/api/recipes/1"
+method: GET
+headers:
+  Accept: application/json
+order: 2000

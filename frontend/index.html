@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Recipe Card - Single-Table CRUD</title>
+    <title>Happy meal personal recipe - Single-Table CRUD</title>
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts for modern typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,9 +18,8 @@
     <header class="app-header">
         <div class="header-container">
             <div class="brand">
-                <span class="brand-icon">🍳</span>
                 <div>
-                    <h1>Personal Recipe Card</h1>
+                    <h1>Happy Meal Personal Recipe</h1>
                     <p class="subtitle">Mulungushi University — ICT251 Activity 4 (Question 2)</p>
                 </div>
             </div>
@@ -33,6 +32,25 @@
     </header>
 
     <main class="main-layout">
+        <section class="welcome-banner" aria-labelledby="welcomeTitle">
+            <div class="welcome-copy">
+                <p class="welcome-eyebrow">Good food, shared stories</p>
+                <h2 id="welcomeTitle">A home for recipes worth sharing</h2>
+                <p>Save family favourites, celebrate local flavours, and keep every cooking detail close at hand.</p>
+                <a class="welcome-link" href="#recipeForm">Add your first recipe <span aria-hidden="true">&rarr;</span></a>
+            </div>
+            <div class="welcome-gallery" aria-label="Photos of Zambian food and cooking">
+                <img class="gallery-feature" src="images/recipe-06.webp" alt="A colourful spread of traditional dishes" fetchpriority="high">
+                <img src="images/recipe-01.webp" alt="Nshima served with relish">
+                <img src="images/recipe-02.webp" alt="A bowl of grilled meat and vegetables">
+                <img src="images/recipe-03.webp" alt="A plate of rice, grilled meats, and corn">
+                <img src="images/recipe-04.webp" alt="A cook serving food at a gathering">
+                <img src="images/recipe-05.webp" alt="Freshly grilled maize">
+                <img src="images/recipe-07.webp" alt="Chicken and vegetables served with nshima">
+                <img src="images/recipe-08.webp" alt="A serving of chicken with vegetables">
+            </div>
+        </section>
+
         <!-- Left Column: Recipe Form (Create / Edit) -->
         <section class="form-section">
             <div class="card form-card">
@@ -113,7 +131,7 @@
                     <!-- Form Buttons -->
                     <div class="form-actions">
                         <button type="submit" id="submitBtn" class="btn btn-primary">
-                            <span class="btn-icon">💾</span> <span id="submitBtnText">Save Recipe</span>
+                            <span class="btn-icon"></span> <span id="submitBtnText">Save Recipe</span>
                         </button>
                         <button type="button" id="cancelBtn" class="btn btn-secondary hidden">
                             Cancel Edit
@@ -135,7 +153,7 @@
                     <div class="toolbar-actions">
                         <!-- Search Box -->
                         <div class="search-box">
-                            <span class="search-icon">🔍</span>
+                            <span class="search-icon"></span>
                             <input type="text" id="searchInput" placeholder="Search recipe or ingredient...">
                         </div>
 
@@ -146,7 +164,7 @@
 
                         <!-- Refresh Button -->
                         <button id="refreshBtn" class="btn btn-icon-only" title="Refresh list">
-                            🔄
+
                         </button>
                     </div>
                 </div>

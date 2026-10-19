@@ -1,0 +1,22 @@
+$kind: http-request
+description: Updates all fields of an existing recipe by its ID. Returns HTTP 200 OK.
+url: "{{baseUrl}}/api/recipes/2"
+method: PUT
+headers:
+  Content-Type: application/json
+  Accept: application/json
+body:
+  type: json
+  content: |-
+    {
+      "title": "Authentic Roman Spaghetti Carbonara (Updated)",
+      "cuisine": "Italian",
+      "category": "Dinner",
+      "prep_time_minutes": 15,
+      "cook_time_minutes": 12,
+      "servings": 3,
+      "ingredients": "250g artisanal bronze-die spaghetti, 120g cured guanciale cubes, 3 fresh egg yolks + 1 whole egg, 60g freshly grated Pecorino Romano DOP, freshly ground black peppercorns",
+      "instructions": "1. Boil spaghetti in lightly salted water.\n2. Crisp guanciale in a wide skillet until fat renders.\n3. Whisk egg yolks, pecorino cheese, and black pepper in a ceramic bowl.\n4. Toss pasta into skillet off heat, stir in egg mixture with reserved starchy pasta water to create a glossy emulsion.\n5. Serve immediately on preheated plates with extra pecorino.",
+      "difficulty": "Medium"
+    }
+order: 4000
