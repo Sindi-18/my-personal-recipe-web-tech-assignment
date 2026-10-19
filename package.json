@@ -1,0 +1,14 @@
+{
+  "name": "my-personal-recipe-system",
+  "version": "1.0.0",
+  "description": "ICT251 Activity 4 - Question 2: Personal Recipe Card CRUD System",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "build": "cd backend && npm install",
+    "postinstall": "cd backend && npm install"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
